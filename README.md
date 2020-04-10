@@ -1,0 +1,2 @@
+# add_table_pivot_to_laravel
+add_table_pivot_to_laravel

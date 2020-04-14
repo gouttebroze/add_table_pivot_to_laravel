@@ -18,9 +18,19 @@
                 </div>
             </div>
             
+        <!--test exemple component for vuetify test
            
+           <div>
+
+                <v-app>
+                    <example-component></example-component>
+                </v-app>
+
+           </div>
+
+        -->
 
        
-    </div>
+    
 </div>
 @endsection

@@ -40,6 +40,14 @@ class ProduitController extends Controller
             'produits' => $produits,
             'categories' => $categories,
         ]);
+        
+
+        //retourner le json
+        
+        $produits = Produit::all();
+        return response()->json($produits);
+        
+        
 
         /*
         if (request()->categorie) {
@@ -100,6 +108,8 @@ class ProduitController extends Controller
         $category = Category::all();
         return view('produits.show', compact('produit', 'category'))->with('produit', $produit);
         //return view('show', compact('produit'));
+
+        
     }
 
      /**

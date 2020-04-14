@@ -79,6 +79,19 @@
                 </div>
             @endif
 
+
+
+
+            
+            <div class="card-body">        
+               
+               <user-component></user-component>
+                             
+             </div>
+
+
+
+
             <div class="content">
                 <div class="title m-b-md">
                 Alternative Vintage Arts & Rock

@@ -17,6 +17,8 @@
 
     </head>
     <body>
+
+    
         @yield('content')
         <v-app> </v-app>
 

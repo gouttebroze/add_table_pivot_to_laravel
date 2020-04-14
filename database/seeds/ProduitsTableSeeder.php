@@ -127,10 +127,142 @@ class ProduitsTableSeeder extends Seeder
                                 
                             
                     ; 
+
+                    Produit::create(
+                        [
+                            'title' => 'Acid King',// 'Nirvana', 'Daniel Johnston',
+                            'slug' => 'acid-king-the-early-years',
+                            'subtitle' => 'Acid King',
+                            'realisation' => 'The Early Years', //'In Utero', 'Pain',
+                            'description' => 'A CD of this famous band of Stoner Rock from San Francisco, CA, formed in 1993. Official site: acidking.com. Listen on: https://youtu.be/1EbXKWN_RNE',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                            'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                            //'category_id' => '3',// '2', '2',
+                            'year' => '2006',// '1994', '1984',
+                            'price' => '118'*100,// '16', '19',   
+                            
+                            ]
             
+                        )->categories()->attach(1, 2);
+
+
+                        Produit::create(
+                            [
+                                'title' => 'Eath (2)',// 'Nirvana', 'Daniel Johnston',
+                                'slug' => 'earth_2_pentastar_in_the_style_of_demons',
+                                'subtitle' => 'Earth (2) ‎– Pentastar: In The Style Of Demons',
+                                'realisation' => 'Pentastar: In The Style Of Demons', //'In Utero', 'Pain',
+                                'description' => 'This album has been released on the Sub Pop label. Earth are considered pioneers of stoner, drone doom genre 
+                                (also minimalist, meditative psychedelic/post-rock with gospel and country influences. They are based in Seattle. ',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                //'category_id' => '3',// '2', '2',
+                                'year' => '1996',// '1994', '1984',
+                                'price' => '14'*100,// '16', '19',   
+                                
+                                ]
+                
+                            )->categories()->attach(2);
+
+
+                            Produit::create(
+                                [
+                                    'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
+                                    'slug' => 'dan_johnston_songs_of_pain',
+                                    'subtitle' => 'Songs Of Pain',
+                                    'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
+                                    'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
+                                    Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                    'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                    //'category_id' => '3',// '2', '2',
+                                    'year' => '1982',// '1994', '1984',
+                                    'price' => '05'*100,// '16', '19',   
+                                    
+                                    ]
+                    
+                                )->categories()->attach(3);
+            
+                        /*Earth are considered pioneers of drone doom genre. The band was founded 
+                        in 1990, broke up in 1997 and re-united in 2003. Their musical style ranges 
+                        from abrasive drone metal (Earth 2), to stoner rock (Pentastar) and lately,
+                         more minimalist, meditative psychedelic/post-rock with gospel and country 
+                         influences. They are based in Seattle, Washington.*/
+                       
+                       
+                       
+                         /* Daniel Johnston (born January 22, 1961, Sacramento, California, 
+                        USA - died September 10, 2019, Waller, Texas, USA) was an American 
+                        singer-songwriter, and visual artist. He was well known in Austin, 
+                        Texas for painting the Hi How Are You? frog mural on the side of 
+                        Sound Exchange, Austin, TX.*/
+
+
+                        Produit::create(
+                            [
+                                'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
+                                'slug' => 'dan_johnston_songs_of_pain',
+                                'subtitle' => 'Songs Of Pain',
+                                'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
+                                'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
+                                Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                //'category_id' => '3',// '2', '2',
+                                'year' => '1982',// '1994', '1984',
+                                'price' => '05'*100,// '16', '19',   
+                                
+                                ]
+                
+                            )->categories()->attach(4);
+
+                            Produit::create(
+                                [
+                                    'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
+                                    'slug' => 'dan_johnston_songs_of_pain',
+                                    'subtitle' => 'Songs Of Pain',
+                                    'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
+                                    'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
+                                    Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                    'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                    //'category_id' => '3',// '2', '2',
+                                    'year' => '1982',// '1994', '1984',
+                                    'price' => '05'*100,// '16', '19',   
+                                    
+                                    ]
+                    
+                                )->categories()->attach(4); 
+                                
+                                Produit::create(
+                                    [
+                                        'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
+                                        'slug' => 'dan_johnston_songs_of_pain',
+                                        'subtitle' => 'Songs Of Pain',
+                                        'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
+                                        'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
+                                        Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                        'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                        //'category_id' => '3',// '2', '2',
+                                        'year' => '1982',// '1994', '1984',
+                                        'price' => '05'*100,// '16', '19',   
+                                        
+                                        ]
                         
-
-
+                                    )->categories()->attach(4); 
+                                    
+                                    
+                                    Produit::create(
+                                        [
+                                            'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
+                                            'slug' => 'dan_johnston_songs_of_pain',
+                                            'subtitle' => 'Songs Of Pain',
+                                            'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
+                                            'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
+                                            Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                            'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
+                                            //'category_id' => '3',// '2', '2',
+                                            'year' => '1982',// '1994', '1984',
+                                            'price' => '05'*100,// '16', '19',   
+                                            
+                                            ]
+                            
+                                        )->categories()->attach(4);                                   
             /*Produit::create(
                 [
                     'artist_name' => 'Shellac',// 'Nirvana', 'Daniel Johnston',

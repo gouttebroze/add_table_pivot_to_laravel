@@ -21,25 +21,36 @@ Vue.use(require('bootstrap-vue'));
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 
-//Vue.component('example-component', require('/components/ExampleComponent.vue'));
+//import Vuetify from '../plugins/vuetify'
 
+//Vue.component('app-container', require('./components/appContainer.vue').default);
+//Vue.component('toolsbar-component', require('./components/ToolsbarComponent.vue').default);
 
-//Vue.component('MymusiccardComponent-component', require('/components/MymusiccardComponent.vue'))
+//Vue.component('toolsbar-component', require('./components/ToolsbarComponent.vue').default);
 
-
-
-
-/*import produits from './components/ProduitsComponent.vue';
+import produits from './components/ProduitsComponent.vue';
 Vue.component('produits-component', produits);
 
-/*import tabs from './components/TabsComponent.vue';
-Vue.component('tabs-component', tabs);*/
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('new-component', require('./components/NewComponent.vue').default);
+Vue.component('bar-component', require('./components/BarComponent.vue').default);
 
-import Vuetify from '../plugins/vuetify';
+import Vue from 'vue';
+/*import Carousel3d from 'vue-carousel-3d';
 
-/*import Vuetify from 'vuetify';
-Vue.use(Vuetify);*/
+Vue.use(Carousel3d);*/
 
+import Vuetify from 'vuetify';
+Vue.use(Vuetify);
+
+
+
+//Vue.component('user-component', require('./components/UserComponent.vue').default);
+/*
+const app = new Vue({
+    el: '#app',
+});
+*/
 /*import { CardPlugin } from 'bootstrap-vue'
 Vue.use(CardPlugin)*/
 
@@ -48,11 +59,22 @@ Vue.use(CardPlugin)*/
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-
-
-const app = new Vue({
-    Vuetify: Vuetify,
+/*
+new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
+    data: () => ({
+      items: [
+        { title: 'Vinyls' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' },
+      ],
+    }),
+  })
+*/
+  new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
     
-});
+  })

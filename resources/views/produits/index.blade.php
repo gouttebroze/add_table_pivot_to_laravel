@@ -2,6 +2,13 @@
 
 @section('content')
 
+<!--
+<div id="app">
+            <v-app>
+            <new-component></new-component>
+            </v-app>
+-->
+
   <!--navbar categories-->
 <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
@@ -58,6 +65,15 @@
                 <p class="card-text mb-auto">{{ $produit->getPrice() }}</p>
                 
                 <a href="{{ route('produits.show', $produit->slug) }}" class="stretched-link btn btn-info">voir !</a>
+            
+                <!--
+                <div id="app">
+            <v-app>
+            <example-component></example-component>
+            </v-app>
+        </div>
+-->
+
               </div>
               <div class="col-auto d-none d-lg-block">
                 <img src="{{ $produit->image }}" alt="">

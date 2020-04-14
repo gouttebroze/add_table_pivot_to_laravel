@@ -1,18 +1,13 @@
-
-<template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                        I'm an example component
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--
+<template >
+  
+<div id="app">
+  <v-app id="inspire">
+    <div class="text-center">
+      <v-btn rounded color="primary" dark>Rounded Button</v-btn>
     </div>
+  </v-app>
+</div>
 </template>
 
 <script>
@@ -24,3 +19,5 @@
         }
     }
 </script>
+
+-->

@@ -1,4 +1,4 @@
-@extends('template_vue')
+@extends('template')
 
 @section('title', 'produits.index')
 
@@ -7,13 +7,15 @@
 
 
 
+
 <div id="app">
+          <v-app>  
             
-
             <produits-component></produits-component>
-
-            <v-app></v-app>
+        </v-app>
+            
 </div>
+
 
 
 

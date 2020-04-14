@@ -1,6 +1,149 @@
 $primary-color: rgba(0, 0, 0, 0.787);
 
-html{
+/*html{
+    background-image: url(../uploads/serveimage2.jpeg) center 0 no-repeat fixed;  
+}*/
+header{
+
+    text-align: center; 
+    //border-radius: 20px;
+    //border: 3px solid black;
+    font-size: 400px;
+    
+    
+    padding: 4px 50px 4px 50px;
+    font-family: 'Griffy', cursive;
+    color: rgb(149, 10, 142);
+    //background-image:url(../images/el-ultimo-grito-numero-02.jpg);
+    //background-repeat:no-repeat;
+   // background-size: cover;
+}
+
+#slide1, #slide2, #slide3, #slide4 {
+    height: 1000px;
+    width: 1000px;
+    padding-top:100px;
+    color: rgb(201, 185, 231);
+}
+
+#slide1 {
+    background: url(../uploads/serveimage2.jpeg) center  0 no-repeat fixed ;
+    
+ }
+ 
+ #slide2 {
+    background: url(../images/la-tranchee-racine-numero-1.jpg) center 0 no-repeat fixed;
+ }
+ 
+ #slide3 {
+    background: url(../images/la-tranchee-racine-numero-2-bis.jpg) center 0 no-repeat fixed;
+ }
+
+ #slide4 {
+    background: url(../uploads/serveimage2.jpeg) center 0 no-repeat fixed;
+ }
+
+ 
+
+ #slide3 .slide_inside {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    padding: 50px;
+}
+
+
+
+/*html { 
+    margin:0;
+    padding:0;
+    background: url(../img/la-tranchee-racine-numero-5.png) center 0 no-repeat fixed ;
+    background: url(../img/la-tranchee-racine-numero-7.png) center 0 no-repeat fixed;
+    background: url(../img/la-tranchee-racine-numero-07-bis.png) center 0 no-repeat fixed;
+    background: url(../img/el-ultimo-grito-numero-02.jpg) center 0 no-repeat fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    /*background-size: cover; 
+  }*/
+
+
+
+div {
+    display: block;
+}
+
+/*
+          html, body {
+           background-color: #fff;
+                color: #636b6f;
+                font-family: 'Griffy', cursive;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+            }
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }*/
+
+/*@supports (mix-blend-mode: difference) {
+    body {
+    background-image: linear-gradient(90deg,#fff 49.9%,#000 50%);
+    }
+    h1 { 
+        color: #fff;
+    }
+  }*/
+
+ /* #h2 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/el-ultimo-grito-numero-02.jpg),
+                url(../img/la-tranchee-racine-numero-5.png);
+    background-blend-mode: darken;
+}*/
+
+
+
+
+
+/*html{
     font-family: 'Griffy', cursive;
     background-image:url(../uploads/serveimage2.jpeg);
     background-repeat: repeat-x;
@@ -159,7 +302,7 @@ font-family: 'Griffy', cursive;
 .m-b-md>ul>li {
     list-style-type: none;
 }
-
+*/
 
 
 

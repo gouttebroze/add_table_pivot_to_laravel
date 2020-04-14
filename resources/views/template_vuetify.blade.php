@@ -33,7 +33,7 @@
       </v-avatar>
 
       <v-toolbar-title class="font-weight-black headline">
-        Alternative Vintage Art's & Rock Music
+        Alternative Vintage Art's & Rock Store
       </v-toolbar-title>
     </v-app-bar>
 

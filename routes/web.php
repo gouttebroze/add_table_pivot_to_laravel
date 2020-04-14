@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('template_produits');
+    return view('template');
 });
 
 /*Route::get('1', function() { return 'Je suis la page 1 !'; });
@@ -59,10 +59,13 @@ Route::get('products', 'ProductController@edit');
 Route::resource('products', 'ProductController');
 Route::get('category/{name}/products', 'ProductController@index')->name('products.category');
 
-/*routes produit*/
+//routes produit API
 Route::get('store', 'ProduitController@index')->name('produits.index');
 Route::get('store/{slug}', 'ProduitController@show')->name('produits.show');
 
+//TEST
+//Route::get('produits.index', 'ProduitController@index')->name('produits.index');
+//Route::get('produits.show/{slug}', 'ProduitController@index')->name('produits.show');
 //Route::get('category/{name}/produits', 'ProductController@index')->name('produits.show.category');
 
 /*Route::get('/store/{name}', function () {
@@ -113,4 +116,15 @@ Route::get('/test', function () {
 
 //Route::get('category/{name}/produits', 'ProduitController@index')->name('produits.index.category');
 
+/*
+Route::get('/produits/{firstname}/{lastname}', 'StudentController@index');
 
+Route::get('/store', function () {
+    return view('store', ['produit' => 'Title']);
+});
+*/
+Route::get('/userlist','UserController@index')->name('userlist');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

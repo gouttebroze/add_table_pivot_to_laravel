@@ -8,12 +8,11 @@
     <meta name="generator" content="Jekyll v3.8.6">
     <title>Blog Template · Bootstrap</title>
 
-    <!--lien bootstrap-->
+    
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Bootstrap core CSS 
-<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
-
-    <!-- Favicons -->
+     Bootstrap core CSS 
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ Favicons 
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -21,10 +20,23 @@
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+<meta name="theme-color" content="#563d7c">-->
 
 
-    <style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://cdn.vuetifyjs.com/images/logos/favicon.ico">
+
+
+
+
+
+  
+    
+ <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -147,34 +159,99 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
     </style>
+
+<!---->
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Griffy&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    @yield('css')
-  </head>
+   
+  
 
   <script src="{{ asset('js/app.js') }}" defer></script>
-       
+</head>       
 
        <!-- Styles -->
        
        <link href="{{ asset('css/app.css') }}" rel='stylesheet'>
 
-   </head>
+   
    <body>
       
-   <!--component vue.js-->
-       <v-app> </v-app>
+   <!--test failed for my first component vue.js-->
+      
+   <!--
+   <v-app> 
+       
+    <example-component></example-component>
+    
+       </v-app>
+      
+--> 
+    <div id="app">
+          <v-app>  
+            
+            <produits-component></produits-component>
+        </v-app>
+            
+</div>  
+ 
 
        
    
   <!--header-->
+  <nav class="navbar navbar-expand-lg">
+
+<ul class="navbar-nav">
+      <li class="active">
+          <a href="http://localhost:8000/contact" class="nav-link">Contact</a>
+      </li>
+
+      <li class="nav-item">
+            <a href="http://localhost:8000/products" class="nav-link">Products</a>
+      </li>
+
+      <li class="nav-item">
+          <a href="productsController.php" class="nav-link">Vinyls</a>
+      </li>
+        
+      <li class="nav-item">
+          <a href="productsController.php" class="nav-link">CDs</a>
+      </li>
+
+      <li class="nav-item">
+          <a href="productsController.php" class="nav-link">Graphzines</a>
+      </li>
+            
+      <li class="nav-item">
+          <a href="cartController.php" class="nav-link">Panier</a>
+      </li>
+
+        
+    </ul>
+
+</nav>
+
+<!--Puis, j'affiche le nombre d'article acheter sur la page products
+grâce au package Soppingcart, 
+
+!!!A FAIRE:IL FAUT QUE JE RAJOUTE LA ROUTE A LA PLACE DU "#"!!!-->
+
+<a class="text-muted" href="#"> Panier <span class="badge badge-pile badge-dark">{{ Cart::count() }}
+
+</span></a>
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
+
+
     <div class="container">
   <header class="blog-header py-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <a class="text-muted" href="#">Subscribe</a>
-      </div>
+      
       <div class="col-4 text-center">
         <a class="blog-header-logo text-dark" href="{{ route('produits.index') }}">Alternative Vintage Art's & Rock</a>
       </div>
@@ -206,9 +283,28 @@ h1, h2, h3, h4, h5, h6 {
 
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <h1 class="display-4 font-italic">About Alternative Scene </h1>
+      <p class="lead my-3">Une musique alternative est une musique qui s’affranchit de tout type d’appartenance de style, de forme de jeu, de famille musicale, de règles à respecter. Elle s’invente avec ses propres critères de composition, de réalisation ou de diffusion. On retrouve dans la musique alternative, de nombreuses influences musicales, sans pour autant que celle-ci s'enferme dans des codes spécifiques de genre. La notion d'alternative réside également dans l'idée d'une certaine liberté face aux systèmes industriels existants. On peut donc dire qu'il n'existe pas une seule forme de musique alternative, mais que celle-ci est forcément inclassable, ouverte et plurielle.</p>
       <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+      <ul>
+        <li>
+        Avant-garde
+        </li>
+        <li>
+          Liste de genres musicaux
+        </li>
+        <li>
+        Musique improvisée
+        </li>
+        <li>
+        Musique contemporaine
+        </li>
+        <li>
+        Culture underground
+        </li>
+        
+        
+      </ul>
     </div>
   </div>
 

@@ -13,8 +13,8 @@ class ApiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function produit ($id){
-
+   public function index ($produits){
+        $produits = new Produit($firstname, $lastname);
         return view ('produits.index');
     }
 

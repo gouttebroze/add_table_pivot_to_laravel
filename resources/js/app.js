@@ -9,19 +9,15 @@ require('./bootstrap');
 window.Vue = require('vue');
 Vue.use(require('bootstrap-vue'));
 
+import VueRouter from 'vue-router'
 /**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-
-//import Vuetify from '../plugins/vuetify'
+///import Vuetify from '../plugins/vuetify'
 
 //Vue.component('app-container', require('./components/appContainer.vue').default);
 //Vue.component('toolsbar-component', require('./components/ToolsbarComponent.vue').default);
@@ -33,23 +29,53 @@ Vue.component('produits-component', produits);
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 //Vue.component('new-component', require('./components/NewComponent.vue').default);
-Vue.component('bar-component', require('./components/BarComponent.vue').default);
+//Vue.component('bar-component', require('./components/BarComponent.vue').default);
+//Vue.component('navdrawer-component', require('./components/NavdrawerComponent.vue').default);
 
-import Vue from 'vue';
-/*import Carousel3d from 'vue-carousel-3d';
+//import Vue from 'vue';
 
-Vue.use(Carousel3d);*/
 
 import Vuetify from 'vuetify';
 Vue.use(Vuetify);
 
 
 
-//Vue.component('user-component', require('./components/UserComponent.vue').default);
-/*
-const app = new Vue({
+//Vue.use(VueRouter);
+
+//on importe nos routes
+/*import Accueil from './components/AccueilComponent.vue';
+Vue.component('accueil-component', Accueil);
+
+
+import Store from './components/StoreComponent.vue';
+Vue.component('store-component', Store);
+
+//puis on créé 1 constante de nos route qui sera 1 tableau, avec mes objets:
+const routes = [
+  {
+    path: '/accueil',
+    component: 'Accueil'
+  },
+  {
+    path: '/store',
+    component: 'Store'
+  }
+
+];
+
+const router = new VueRouter({routes})
+
+
+
+
+const app = new VueRouter({
     el: '#app',
-});
+    router: router
+})
+*/
+/*const app = new Vue({
+  router
+}).$mount('#app')
 */
 /*import { CardPlugin } from 'bootstrap-vue'
 Vue.use(CardPlugin)*/
@@ -73,8 +99,9 @@ new Vue({
     }),
   })
 */
-  new Vue({
+new Vue({
     el: '#app',
     vuetify: new Vuetify(),
     
   })
+ 

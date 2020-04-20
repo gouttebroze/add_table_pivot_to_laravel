@@ -6,7 +6,7 @@
       color="#fcb69f"
       dark
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      src="https://unsplash.com/photos/EqeJrBFGQd0"
       scroll-target="#scrolling-techniques-2"
     >
       <template v-slot:img="{ props }">
@@ -44,7 +44,7 @@
 
 
 
-          
+
       </v-container>
     </v-sheet>
   </v-card>

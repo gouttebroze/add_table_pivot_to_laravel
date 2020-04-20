@@ -1,13 +1,42 @@
 <template>
-    
 
+    <!--
+                    <ul>
+                        <li v-for="contact in contacts" v-bind:key="contact.id">
+                            {{ contact.firstname }} {{ contact.lastname }}
+                        </li>
+                    </ul>
+      -->          
+            <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header">{{ title }}</div>
+                       
+<!--                  <div class="card">
+            <div class="card-header">{{ title }}</div>
+            <img class="card-img-top" src="{{ produit.image }} " alt="Card image" title="WAR">
+            <div class="card-body">
+            <h4 class="card-title">{{ produit.id }} {{ produit.title }}</h4> 
+            <p class="card-text">{{ produit.realisation }}</p> 
+            <p class='p1'>Notes for album</p> 
+            <p class='p2'>{{ produit.description }}</p>
+            <a href="panier.html" class="btn btn-dark">{{ produit.price }}€</a>
+            </div>
+            </li>
+            </ul>-->
                     <ul>
 <!--on va faire 1 boucle (comme si on faisait 1 foreach)-->
                         <li v-for="produit in produits" v-bind:key="produit.id">
-                            <a href="#">{{ produit.title }} {{ produit.realisation }} {{ produit.subtitle }}{{ produit.image }} {{ produit.year }}</a>
+                           
+                               <!-- <a href=# onclick=return findProduitsById();>lien</a>-->
+                            <!--<a href="#">--><a>{{ produit.id }} {{ produit.title }} {{ produit.realisation }} {{ produit.image }} {{ produit.year }} {{ produit.price }} {{ produit.slug }}</a><!--</a>-->
                         </li>
                     </ul>
-        
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -59,8 +88,13 @@ qd le composant sera appellé)*/
             }
         }
     }*/
-
-    
+/*
+    function findProduitsById()
+                                {
+                                //code
+                                return false;
+                                }
+ */                               
     export default {
         mounted() {
             axios
@@ -74,5 +108,10 @@ qd le composant sera appellé)*/
             }
         }
     }
-
+/*on a définie une data qui doit être 1 fontion, qui retourne 1 tableau avec 1 objet
+qui est 1 objet vide, donc:
+je vais stocké des données ds data, puis je retourne 1 objet et ds ces données j'ai
+1 objet vide 'produits', et je peux y accéder ds mon composant vue.js en faisant
+'this.produits', donc qd je fais appel avec ma requête 'axios' à mon URL, je peux 
+aller stocker mes données ds le tableau vide*/
 </script>

@@ -1,7 +1,9 @@
 <?php
 namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
+
 class Produit extends FormRequest
+
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,10 +25,12 @@ class Produit extends FormRequest
             'title' => ['required', 'string', 'max:100'],
             'slug' => ['required', 'string', 'max:100'],
             'subtitle' => ['required', 'string', 'max:500'],
-            //'price' => ['required', 'decimal', 'max:'],
-            //'image' => ['required', 'string', 'max:'],
+            'price' => ['required', 'decimal', 'max:'],
+            'image' => ['required', 'string', 'max:'],
             //'category_id' => ['required', 'string', 'max:100'],//unsignedInteger à la place de string?
         ];
     }
-}
+};
 
+    
+            

@@ -1,13 +1,8 @@
-@extends('template_produits')
+@extends('template4')
 
 @section('content')
 
-<!--
-<div id="app">
-            <v-app>
-            <new-component></new-component>
-            </v-app>
--->
+
 
   <!--navbar categories-->
 <div class="nav-scroller py-1 mb-2">

@@ -23,7 +23,28 @@ class Produit extends Model
     
 }
     
+public function findProduitsByCategory($categoryId) {
 
+    $produits = static::where('categoryId', $categoryId);
+    $data=[];
+        foreach($produits as $produit){
+
+            $data=[ 
+                'id' => $produit->id,
+                'title' => $produit->title,
+                'slug' => $produit->slug,
+                'price' => $produit->price,
+                'subtitle' => $produit->subtitle,
+                'realisation' => $produit->realisation,
+                'description' => $produit->description,
+                'year' => $produit->year,
+                'category' => Category::findOrFail($produit -> categoryId) 
+                ];
+        }
+        return $data();
+    }  
+    
+    
     /*public function produits() 
 { 
     

@@ -26,6 +26,7 @@
     <div id="app">
             <v-app>
             <bar-component></bar-component>
+            <navdrawer-component></navdrawer-component>
             </v-app>
     </div>
 
@@ -71,7 +72,12 @@
 
     </nav>
    
+<!--Puis, j'affiche le nombre d'article acheter sur la page products
+grâce au package Soppingcart, 
 
+!!!A FAIRE:IL FAUT QUE JE RAJOUTE LA ROUTE A LA PLACE DU "#"!!!-->
+
+<a class="text-muted" href="#"> Panier <span class="badge badge-pile badge-dark">{{ Cart::count() }}
     
     
 
@@ -111,15 +117,7 @@
                 <div class="container">
                     
                     
-                    <header>  
-                                
-                            <h1 class=".h1">Alternative Vintage Arts & Rock</h1>
-                        
-                        <div id="h2">
-                            <h2 class="h2">Vinyls & Books on Underground Scene</h2>
-                        
-                      </div>
-                    </header>                 
+                                     
                     </br> 
 
                     
@@ -139,11 +137,11 @@
                             <h1 class=".h1">VINYLS </h1>
                             <h1 class=".h1">GRAPHZINES</h1>
                         
-                            <marquee scrollamount="15" scrolldelay="30" 
+                            <marquee scrollamount="08" scrolldelay="30" 
                             onmouseover="this.stop();" onmouseout="this.start();">
-                            <img src="images/la-tranchee-racine-numero-2-bis.jpg" alt="graphzine" style=width:300px height=500px >：&nbsp;&nbsp;&nbsp;&nbsp;<images src="img/la-tranchee-racine-numero-7.png" alt="graphzine" style=width:300px height=500px > :&nbsp;&nbsp;&nbsp;&nbsp;
-                            <img src="images/el-ultimo-grito-numero-02.jpg" alt="graphzine" style=width:300px height=500px >：&nbsp;&nbsp;&nbsp;&nbsp;
-                            <img src="images/la-tranchee-racine-numero-1.jpg" alt="graphzine" style=width:300px height=500px >！&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+                            <img src="../images/la-tranchee-racine-numero-2-bis.jpg" alt="graphzine" style=width:300px height=500px >：&nbsp;&nbsp;&nbsp;&nbsp;<images src="../images/la-tranchee-racine-numero-7.png" alt="graphzine" style=width:300px height=500px > :&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../images/el-ultimo-grito-numero-02.jpg" alt="graphzine" style=width:300px height=500px >：&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img src="../images/la-tranchee-racine-numero-1.jpg" alt="graphzine" style=width:300px height=500px >！&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
         
         </div>
     
@@ -203,15 +201,9 @@
 <!-----------------------effet_paralax_de_défilement-------------------------->
                         <marquee scrollamount="4" scrolldelay="30" 
                         onmouseover="this.stop();" onmouseout="this.start();">
-                        登陆温馨提示：&nbsp;&nbsp;&nbsp;&nbsp;尊敬的国民彩票会员，您好，
-                        出现登陆卡顿，和登陆不上的，请清除缓存，重新登陆即可，
-                        谢谢&nbsp;&nbsp;&nbsp;&nbsp;国民彩票提醒您：我司充值渠道已全面恢复，
-                        目前支持，支付宝扫码，银联快捷支付，QQ钱包，微信支付，网银存款，
-                        银行卡划款等超多种充值渠道，全面提升您的存款速度，
-                        欢迎您的游戏！：&nbsp;&nbsp;&nbsp;&nbsp;
-                        国民彩票提醒您：我司充值渠道已全面恢复，目前支持，支付宝扫码，银联快捷支付，
-                        QQ钱包，微信支付，网银存款，银行卡划款等超多种充值渠道，全面提升您的存款速度，
-                        欢迎您的游戏！&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+                        Alternative Vintage Vinyls：&nbsp;&nbsp;&nbsp;&nbsp;Site NON COMMERCIAL&nbsp;&nbsp;&nbsp;&nbsp;Design Tech Académie，
+                        ！：&nbsp;&nbsp;&nbsp;&nbsp;
+                        Made in 2020！&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
                             
                     </footer>    
                             

@@ -54,7 +54,7 @@ class ProduitsTableSeeder extends Seeder
         ])->categories()->attach(2)
         ;
     */
-    
+    /*
         Produit::create(
             [
                 'title' => 'RAMONES',// 'Nirvana', 'Daniel Johnston',
@@ -103,6 +103,10 @@ class ProduitsTableSeeder extends Seeder
     
                 )->categories()->attach(3);
                     
+
+                */
+
+
                 //next descriprtion of 'bossanova'
                 
                 /*The original lineup consisted of Black Francis (real name Charles Michael Kittridge Thompson IV) (vocals, guitar), Kim Deal (bass, vocals (1986 to 2013), Joey Santiago (guitar) and Dave Lovering (drums).
@@ -110,7 +114,7 @@ class ProduitsTableSeeder extends Seeder
                 Bossanova is the fifth Pixies album.Pixies are an American alternative rock, Indie Rock, band formed in early 1986 in Boston,  
                     Pixies are an American alternative rock, Indie Rock, band formed in early 1986 in Boston, Massachusetts.*/
 
-                    
+                /*    
                     Produit::create(
                         [
                             'title' => 'La souris déglinguée',// 'Nirvana', 'Daniel Johnston',
@@ -127,7 +131,7 @@ class ProduitsTableSeeder extends Seeder
                                 
                             
                     ; 
-
+*/
                     Produit::create(
                         [
                             'title' => 'Acid King',// 'Nirvana', 'Daniel Johnston',
@@ -142,7 +146,7 @@ class ProduitsTableSeeder extends Seeder
                             
                             ]
             
-                        )->categories()->attach(1, 2);
+                        )->categories()->attach(1);
 
 
                         Produit::create(
@@ -197,38 +201,47 @@ class ProduitsTableSeeder extends Seeder
 
                         Produit::create(
                             [
-                                'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
-                                'slug' => 'dan_johnston_songs_of_pain',
-                                'subtitle' => 'Songs Of Pain',
-                                'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
-                                'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
-                                Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                'title' => 'GRAPHZINE GRAPHZONE',// 'Nirvana', 'Daniel Johnston',
+                                'slug' => 'graphzine_graphzone',
+                                'subtitle' => 'GRAPHZINE GRAPHZONE',
+                                'realisation' => 'Xavier Gilles Néret', //'In Utero', 'Pain',
+                                'description' => '21 cm /29,7 cm - 160 pages / couvrerture en sérigraphie / 2500 ex. 
+                                Site: http://www.lederniercri.org/prod/xavier-gilles-neret-grafzine-grafzone-1357,324.html',// 'Last album of this band', 'Second album of the king of Lo-Fi',
                                 'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
                                 //'category_id' => '3',// '2', '2',
-                                'year' => '1982',// '1994', '1984',
-                                'price' => '05'*100,// '16', '19',   
-                                
+                                'year' => '2019',// '1994', '1984',
+                                'price' => '25'*100,// '16', '19',   
+                                  
+
                                 ]
                 
                             )->categories()->attach(4);
-
+/*co édition dernier cri / editions du sandre
+ 
+Transgressif, virtuose et désinvolte, mal connu du grand public mais désormais 
+reconnu par les institutions, comme la Bibliothèque nationale qui lui consacre 
+depuis peu un fonds, le graphzine désigne une mouvance graphique et éditoriale 
+héritière du mouvement punk et de la culture de l’autonomie. Ce premier essai 
+d’envergure sur le sujet, à la fois historique et critique, rassemble de nombreux 
+témoignages d’acteurs de cette scène en rupture avec le marché de l’art. Publié 
+en coédition avec Le Dernier Cri (Marseille), ce livre à la couverture sérigraphiée 
+bénéficie d’une très riche iconographie, imprimée en bi et trichromie.*/
                             Produit::create(
                                 [
-                                    'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
-                                    'slug' => 'dan_johnston_songs_of_pain',
-                                    'subtitle' => 'Songs Of Pain',
-                                    'realisation' => 'Songs Of Pain', //'In Utero', 'Pain',
-                                    'description' => 'Daniel Johnston was the king of Lo-Fi music, an american singer-songwriter, and visual artist. 
-                                    Born in 1961 and died in 2019. Sites: hihowareyou.com',// 'Last album of this band', 'Second album of the king of Lo-Fi',
+                                    'title' => 'D)EVIL',// 'Nirvana', 'Daniel Johnston',
+                                    'slug' => 'd_evil',
+                                    'subtitle' => 'D)EVIL',
+                                    'realisation' =>  'Anne Van der Linden, Francesco Defourny, Pakito Bolino, Marcel Ruijters, Mathias Lehmann, Marie-Pierre Brunel, P’tit Marc, Benjamin Monti.',
+                                    'description' => ' 36 pages / 7 passages couleurs / 26cmx26cm + divers formats intérieurs / 200ex.',
                                     'image' => 'https://via.placeholder.com/200x250',//'shellac1.jpeg', //A METTRE EN DB!!!'in_utero.jpg', 'pain.jpg',
                                     //'category_id' => '3',// '2', '2',
-                                    'year' => '1982',// '1994', '1984',
-                                    'price' => '05'*100,// '16', '19',   
-                                    
+                                    'year' => '2011',// '1994', '1984',
+                                    'price' => '30'*100,// '16', '19',   
+                                   
                                     ]
                     
                                 )->categories()->attach(4); 
-                                
+                               /* 
                                 Produit::create(
                                     [
                                         'title' => 'Daniel Johnston',// 'Nirvana', 'Daniel Johnston',
@@ -262,7 +275,10 @@ class ProduitsTableSeeder extends Seeder
                                             
                                             ]
                             
-                                        )->categories()->attach(4);                                   
+                                        )->categories()->attach(4);  
+                                        
+                                        */
+
             /*Produit::create(
                 [
                     'artist_name' => 'Shellac',// 'Nirvana', 'Daniel Johnston',

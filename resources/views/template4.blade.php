@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Products</title>
+    <title>Produits</title>
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
@@ -24,7 +24,7 @@
       </li>
 
       <li class="nav-item">
-            <a href="http://localhost:8000/products" class="nav-link">Products</a>
+            <a href="http://localhost:8000/store" class="nav-link">Tous mes produits</a>
       </li>
 
       <li class="nav-item">
@@ -36,11 +36,15 @@
       </li>
 
       <li class="nav-item">
-          <a href="productsController.php" class="nav-link">Graphzines</a>
+          <a href="productsController.php" class="nav-link">Livres, Illustrations</a>
       </li>
             
       <li class="nav-item">
           <a href="cartController.php" class="nav-link">Panier</a>
+      </li>
+
+      <li class="nav-item">
+          <a href="cartController.php" class="nav-link">Commandes</a>
       </li>
 
         
@@ -71,7 +75,7 @@ grâce au package Soppingcart,
                 
     <h2 class=".h2">Vente de Vinyls, CD, Cassettes, Graphzines</h2>
 
-    <a href="panierController.php"><img src="uploads/shopping-cart-solid.svg" alt="go to Basket" style=width:30px height=30px title= "go to basket"></a>
+    
                     
     <!--<img src="{{ asset('uploads/image.jpeg') }}" alt="Mon entreprise Inc." title="Mon entreprise Inc.">--> 
     <!--on va faire un include de notre formulaire de recherche 
@@ -85,22 +89,6 @@ grâce au package Soppingcart,
         </div>
     </main>
 
-    
-    <!--<div class="card-group">
-                      <div class="card">
-                          <img class="card-img-top" src="images/RAMONES-Mondo-Bizzaro.jpg" alt="Card image" title="RAMONES Mondo Bizzaro (band from New-York)">
-                          <div class="card-body">
-                              <h4 class="card-title">RAMONES</h4>
-                              <p class="card-text">Album: Mondo Bizzaro</p>
-                              <p class="card-text">Année: 1992</p>
-                              <p class="card-text">Genre: Rock</p>
-                              <p class="card-text">Style: Rock & roll, Punk</p>
-                              
-                              
-                              <a href="panier.html" class="btn btn-dark">Buy for 10€</a><!-- on met la class button -->
-                         <!-- </div>
-                      </div>
-    </div>-->
 
 
   </body>

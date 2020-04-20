@@ -1,4 +1,4 @@
-@extends('template_produits')
+@extends('template')
 
 @section('content')
 

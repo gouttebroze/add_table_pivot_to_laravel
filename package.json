@@ -35,6 +35,7 @@
     "tailwindcss": "^1.2.0",
     "vue-carousel-3d": "^0.2.0",
     "vue-parallaxy": "^1.1.1",
+    "vue-router": "^3.1.6",
     "vue-tailwind": "^0.4.6",
     "vuetify": "^2.2.21",
     "vuetify-loader": "^1.4.3"

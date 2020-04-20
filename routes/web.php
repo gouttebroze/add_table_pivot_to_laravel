@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('template');
+    return view('welcome');
 });
 
 /*Route::get('1', function() { return 'Je suis la page 1 !'; });
@@ -43,7 +43,7 @@ Route::get('facture/{n}', function($n) {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 /*route contact*/
 Route::get('contact', 'ContactsController@create')->name('contact.create');
@@ -60,8 +60,8 @@ Route::resource('products', 'ProductController');
 Route::get('category/{name}/products', 'ProductController@index')->name('products.category');
 
 //routes produit API
-Route::get('store', 'ProduitController@index')->name('produits.index');
-Route::get('store/{slug}', 'ProduitController@show')->name('produits.show');
+Route::get('store', 'ProduitController@index');//->name('produits.index');
+Route::get('store/{slug}', 'ProduitController@show');//->name('produits.show');
 
 //TEST
 //Route::get('produits.index', 'ProduitController@index')->name('produits.index');
@@ -125,6 +125,10 @@ Route::get('/store', function () {
 */
 Route::get('/userlist','UserController@index')->name('userlist');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+
+//A FINIR: Routes pour récupérer le JSON des produits lors de la création du composant
+Route::get('/','PageController@index');
+
+
+Route::get('store', 'ProduitController@index');//->name('produits.index');
+Route::get('store/{id}', 'ProduitController@show');//->name('produits.show');

@@ -18,14 +18,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //route pour consommer mon API produits
-Route::get('produits', 'ProduitController@index');//->name('produits.index');
-
-//Route::get('produits', 'ProduitController@show')->name('produits.show');
-
-Route::get('/store', function () {
+Route::get('produits', 'ProduitController@index');
+Route::get('produit/{id}', 'ProduitController@show');
+Route::get('produitsByCategory/{id}','ProduitController@show');
+/*Route::get('/store', function () {
     return view('produits.index');
 });
 
-//Route::get('store', 'ApiController@store');
-//Route::get('store', 'ApiController@produits');
+Route::get('/store', function () {
+    return view('produits.show');
+});
+*/
+
 

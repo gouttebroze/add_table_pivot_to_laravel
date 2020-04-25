@@ -132,3 +132,4 @@ Route::get('/','PageController@index');
 
 Route::get('store', 'ProduitController@index');//->name('produits.index');
 Route::get('store/{id}', 'ProduitController@show');//->name('produits.show');
+

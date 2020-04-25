@@ -25,9 +25,15 @@
             </div>
             </li>
             </ul>-->
+            
                     <ul>
 <!--on va faire 1 boucle (comme si on faisait 1 foreach)-->
                         <li v-for="produit in produits" v-bind:key="produit.id">
+                           <a href="#">{{ produit.id }}</a>
+                           <button type="button" class="btn btn-secondary" data-toggle="produit" 
+                               data-target="@Voir" @click="getProduit(produit.id)">
+                               Voir
+                           </button>
                            
                                <!-- <a href=# onclick=return findProduitsById();>lien</a>-->
                             <!--<a href="#">--><a>{{ produit.id }} {{ produit.title }} {{ produit.realisation }} {{ produit.image }} {{ produit.year }} {{ produit.price }} {{ produit.slug }}</a><!--</a>-->
